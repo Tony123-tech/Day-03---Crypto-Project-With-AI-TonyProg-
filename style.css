@@ -1,0 +1,64 @@
+
+body {
+font-family: 'Roboto', 'Orbitron', Arial, sans-serif;
+background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+color: #e0e0e0;
+min-height: 100vh;
+}
+.cyberpunk-glow {
+text-shadow: 0 0 10px #00fff7, 0 0 20px #a100ff;
+}
+.cyber-border {
+border: 2px solid #00fff7;
+box-shadow: 0 0 12px #00fff7, 0 0 32px #a100ff inset;
+border-radius: 1rem;
+}
+.cyber-link {
+color: #00fff7;
+text-decoration: underline;
+cursor: pointer;
+transition: color 0.2s;
+}
+.cyber-link:hover {
+color: #a100ff;
+text-decoration: underline;
+}
+.cyber-card {
+background: linear-gradient(120deg, #23234b 60%, #1a1a2e 100%);
+border: 2px solid #a100ff;
+box-shadow: 0 0 24px #00fff7, 0 0 56px #a100ff inset;
+border-radius: 2rem;
+padding: 2rem;
+transition: transform 0.25s, box-shadow 0.25s;
+}
+.cyber-card:hover {
+transform: translateY(-8px) scale(1.03);
+box-shadow: 0 0 40px #00fff7, 0 0 80px #a100ff inset;
+}
+.neon-btn {
+background: linear-gradient(90deg, #00fff7 0%, #a100ff 100%);
+color: #161623;
+font-family: 'Orbitron', sans-serif;
+padding: 0.7em 2em;
+border: none;
+border-radius: 2em;
+font-weight: 800;
+text-transform: uppercase;
+box-shadow: 0 0 12px #00fff7, 0 0 24px #a100ff;
+transition: background 0.3s, color 0.2s, box-shadow 0.3s, transform 0.2s;
+cursor: pointer;
+letter-spacing: 2px;
+}
+.neon-btn:hover {
+background: linear-gradient(90deg, #a100ff 0%, #00fff7 100%);
+color: #fff;
+box-shadow: 0 0 24px #a100ff, 0 0 24px #00fff7;
+transform: scale(1.05);
+}
+::selection {
+background: #a100ff;
+color: #fff;
+}
+@media (max-width: 640px) {
+.cyber-card { padding: 1rem; }
+}
