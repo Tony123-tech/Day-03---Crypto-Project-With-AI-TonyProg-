@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberAI Crypto Platform</title>
+<meta name="description" content="CyberAI: AI-powered decentralized crypto platform for asset tokenization, cross-chain DeFi, reputation-based blockchain, AI-driven NFTs, and freelance marketplace.">
+<link href="https://cdn.tailwindcss.com" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+<!-- Navbar -->
+<nav class="w-full cyber-border flex items-center justify-between px-8 py-3 mt-6 mb-6 bg-[#23234b] bg-opacity-70 backdrop-blur-lg sticky top-0 z-30">
+<span class="text-2xl md:text-3xl font-orbitron font-extrabold tracking-wide cyberpunk-glow" style="font-family: 'Orbitron', sans-serif;">
+Cyber<span style="color:#a100ff;">AI</span>
+</span>
+<div class="flex gap-6 items-center font-orbitron text-lg">
+<span class="cyber-link" onclick="scrollToSection('assets')">Assets</span>
+<span class="cyber-link" onclick="scrollToSection('defi')">DeFi</span>
+<span class="cyber-link" onclick="scrollToSection('blockchain')">Blockchain</span>
+<span class="cyber-link" onclick="scrollToSection('nfts')">AI NFTs</span>
+<span class="cyber-link" onclick="scrollToSection('freelance')">Freelance</span>
+</div>
+</nav>
+<!-- Hero -->
+<section class="flex flex-col md:flex-row items-center justify-center gap-12 px-8 py-10 md:py-20">
+<div class="md:w-1/2 flex flex-col items-start">
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-orbitron font-extrabold cyberpunk-glow mb-6">
+<span style="color:#00fff7;">CyberAI</span> Crypto Platform
+</h1>
+<p class="text-xl md:text-2xl mb-8 font-light" style="color: #a5b4fc;">
+<span class="font-orbitron" style="color:#a100ff;">Unleashing AI & Blockchain</span> for Real-World Asset Tokenization, Cross-Chain DeFi, Reputation-Based Blockchain, AI NFTs, and Decentralized Freelance Marketplace.
+</p>
+<button class="neon-btn" onclick="scrollToSection('assets')">Explore Features</button>
+</div>
+<div class="md:w-1/2 flex justify-center items-center">
+<div class="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-[#00fff7] to-[#a100ff] blur-2xl opacity-50 animate-pulse"></div>
+<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+alt="Cyberpunk AI Crypto" class="relative rounded-full w-full h-full object-cover border-4 border-[#a100ff] shadow-lg" style="mix-blend-mode: lighten;">
+<div class="absolute bottom-2 right-2 text-xs font-orbitron bg-[#161623aa] px-2 py-1 rounded cyberpunk-glow">
+AI Powered
+</div>
+</div>
+</div>
+</section>
+<!-- Features Sections -->
+<main class="flex flex-col gap-16 px-4 md:px-12 pb-14">
+<!-- 1. Real-World Asset Tokenization -->
+<section id="assets" class="cyber-card mb-8">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="md:w-1/2 mb-6 md:mb-0">
+<h2 class="text-3xl font-orbitron cyberpunk-glow mb-2 flex items-center gap-2">
+🚀 Real-World Asset Tokenization
+</h2>
+<p class="text-lg mb-3 font-light" style="color: #b2b2ff;">
+Inspired by projects like Rexas Finance, CyberAI enables you to tokenize luxury properties, rare collectibles, and physical assets into fractional digital tokens.
+</p>
+<ul class="list-disc pl-6 mb-4">
+<li>Fractional ownership of real estate & art</li>
+<li>No-code token builder for easy asset digitization</li>
+<li>AI-powered smart contract audits for security</li>
+</ul>
+<button class="neon-btn" onclick="openModal('tokenBuilder')">Try No-Code Token Builder</button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=380&q=80"
+alt="Tokenized Asset" class="rounded-xl cyber-border shadow-lg w-[220px] md:w-[280px] object-cover animate-fadeIn">
+</div>
+</div>
+</section>
+<!-- 2. Cross-Chain DeFi Protocol -->
+<section id="defi" class="cyber-card mb-8">
+<div class="flex flex-col md:flex-row-reverse items-center gap-6">
+<div class="md:w-1/2 mb-6 md:mb-0">
+<h2 class="text-3xl font-orbitron cyberpunk-glow mb-2 flex items-center gap-2">
+🌐 Cross-Chain DeFi Protocol
+</h2>
+<p class="text-lg mb-3 font-light" style="color: #b2b2ff;">
+Seamlessly connect multiple blockchains for advanced yield farming, lending, and staking. Inspired by Injective’s IBC Eureka.
+</p>
+<ul class="list-disc pl-6 mb-4">
+<li>Bridge liquid staking tokens between chains</li>
+<li>Unified yield farming & lending dashboard</li>
+<li>Minimal friction DeFi operations</li>
+</ul>
+<button class="neon-btn" onclick="openModal('defiDemo')">View DeFi Dashboard</button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=380&q=80"
+alt="Cross-Chain DeFi" class="rounded-xl cyber-border shadow-lg w-[220px] md:w-[280px] object-cover animate-fadeIn">
+</div>
+</div>
+</section>
+<!-- 3. Reputation-Based Blockchain -->
+<section id="blockchain" class="cyber-card mb-8">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="md:w-1/2 mb-6 md:mb-0">
+<h2 class="text-3xl font-orbitron cyberpunk-glow mb-2 flex items-center gap-2">
+🧠 Reputation-Based Blockchain
+</h2>
+<p class="text-lg mb-3 font-light" style="color: #b2b2ff;">
+Layer 1 blockchain leveraging ZKProofs for privacy and compliance. Inspired by Graphite Network.
+</p>
+<ul class="list-disc pl-6 mb-4">
+<li>Optional KYC with zero-knowledge proofs</li>
+<li>Earn transaction fees by running entry-point nodes</li>
+<li>Privacy-first, reputation-based incentives</li>
+</ul>
+<button class="neon-btn" onclick="openModal('nodeInfo')">Node Rewards Info</button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=380&q=80"
+alt="Reputation Blockchain" class="rounded-xl cyber-border shadow-lg w-[220px] md:w-[280px] object-cover animate-fadeIn">
+</div>
+</div>
+</section>
+<!-- 4. AI-Driven NFT Creation -->
+<section id="nfts" class="cyber-card mb-8">
+<div class="flex flex-col md:flex-row-reverse items-center gap-6">
+<div class="md:w-1/2 mb-6 md:mb-0">
+<h2 class="text-3xl font-orbitron cyberpunk-glow mb-2 flex items-center gap-2">
+🖼️ AI-Driven NFT Creation
+</h2>
+<p class="text-lg mb-3 font-light" style="color: #b2b2ff;">
+Mint personalized avatars, music, and art using generative AI. Dynamic NFT traits evolve with your activity and real-world events.
+</p>
+<ul class="list-disc pl-6 mb-4">
+<li>AI-generated NFT minting</li>
+<li>Personalized avatars & collectibles</li>
+<li>Dynamic, evolving NFT traits</li>
+</ul>
+<button class="neon-btn" onclick="openModal('nftMint')">Mint AI NFT</button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=380&q=80"
+alt="AI NFT Creation" class="rounded-xl cyber-border shadow-lg w-[220px] md:w-[280px] object-cover animate-fadeIn">
+</div>
+</div>
+</section>
+<!-- 5. Decentralized Freelance Marketplace -->
+<section id="freelance" class="cyber-card mb-8">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="md:w-1/2 mb-6 md:mb-0">
+<h2 class="text-3xl font-orbitron cyberpunk-glow mb-2 flex items-center gap-2">
+💼 Decentralized Freelance Marketplace
+</h2>
+<p class="text-lg mb-3 font-light" style="color: #b2b2ff;">
+Global talent meets crypto payments and smart contracts for transparent job matching, escrow, and dispute resolution.
+</p>
+<ul class="list-disc pl-6 mb-4">
+<li>Crypto payments for global freelancers</li>
+<li>Blockchain-based escrow & dispute resolution</li>
+<li>Transparent decentralized job matching</li>
+</ul>
+<button class="neon-btn" onclick="openModal('marketplaceDemo')">Explore Marketplace</button>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=380&q=80"
+alt="Freelance Marketplace" class="rounded-xl cyber-border shadow-lg w-[220px] md:w-[280px] object-cover animate-fadeIn">
+</div>
+</div>
+</section>
+</main>
+<!-- Modals -->
+<div id="modalBg" class="fixed inset-0 bg-[#161623bb] backdrop-blur-md z-50 hidden flex items-center justify-center">
+<div id="modalContent" class="cyber-card max-w-lg w-full relative">
+<button onclick="closeModal()" class="absolute top-3 right-4 text-2xl text-[#a100ff] hover:text-[#00fff7] font-bold">&times;</button>
+<div id="modalInner"></div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full text-center py-6 bg-[#23234b] bg-opacity-80 mt-10 cyber-border font-orbitron">
+<span class="cyberpunk-glow text-lg">CyberAI &copy; 2024 | Powering Decentralized AI Crypto Innovation</span>
+<br>
+<span class="cyber-link" onclick="scrollToSection('assets')">Back to Top</span>
+</footer>
+</body>
+</html>
